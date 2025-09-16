@@ -7,6 +7,56 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <header>
+      <div class="container">
+        <h1>Expense</h1>
+        <span>Total: <span id="total"></span></span>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="card" id="errorMessage">Error message</div>
+      </div>
+      <section class="container">
+        <div class="card">
+          <!-- EXPENSE FORM -->
+          <form id="expenseForm" class="grid">
+            <input
+              type="text"
+              name="name"
+              required
+              placeholder="Transaction Title"
+            />
+            <input type="number" name="amount" required placeholder="Amount" />
+            <select name="category" id="categoryOptions" required>
+              <option value="">--Select Category--</option>
+              <!-- dynamically populated -->
+            </select>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </section>
+      <section class="container">
+        <div class="grid">
+          <div class="card">
+            <h3>Expense Categories</h3>
+            <div class="card-content">
+              <ul id="expenseByCategory">
+                <li class="empty">Transaction is empty</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Expense List</h3>
+            <div class="card-content">
+              <ul id="transactionList">
+                <li class="empty">Transaction is empty</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <script src="script.js"></script>
   </body>
 </html>
