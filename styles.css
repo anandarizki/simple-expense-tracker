@@ -4,15 +4,9 @@
   padding: 0;
 }
 :root {
-  --vibrant: #c5d86d;
-  --vibrant-hover: #9db631;
-  --dark: #00241b;
-  --dark-hover: #094435;
+  --dark: #2c2c2c;
   --gray: #e4e6c3;
   --accent: #9d00ff;
-  --accent-hover: #b349f5;
-  --highlight: #4fb477;
-  --highlight-hover: #73cf98;
   --background: #f7f7f2;
   --danger: #a51c1c;
 }
@@ -22,7 +16,7 @@ html {
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background: var(--background);
-  color: #1b1b1b;
+  color: var(--dark);
 }
 
 section {
